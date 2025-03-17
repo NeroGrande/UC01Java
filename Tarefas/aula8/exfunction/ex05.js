@@ -1,0 +1,22 @@
+/*
+5) Crie uma Função que recebe o Mês pelo Número e retorna o mês por escrito.
+*/
+
+
+
+function obterMes(numero) {
+    const meses = [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    if (numero >= 1 && numero <= 12) {
+        alert("O mês correspondente é: " + meses[numero - 1]);
+    } else {
+        alert("Número inválido! Digite um número entre 1 e 12.");
+    }
+}
+
+// Exemplo de uso:
+let numeroMes = prompt("Digite um número de 1 a 12:");
+obterMes(parseInt(numeroMes));
